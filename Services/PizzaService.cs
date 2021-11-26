@@ -12,9 +12,29 @@ namespace WebApi.Services
         {
             Pizzas = new List<Pizza>()
             {
-                new Pizza { Id = 1, Name = "Classic Italian", IsGlutenFree = false },
-                new Pizza { Id = 2, Name = "Veggie", IsGlutenFree = true },
-                new Pizza { Id = 3, Name = "Pepperoni Special Meatlovers", IsGlutenFree = false },
+                new Pizza { 
+                    Id = 1, 
+                    Name = "Classic Italian", 
+                    IsGlutenFree = false,
+                    Ingredients = new List<Ingredients>(),
+                    Image="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" 
+                },
+
+                new Pizza { 
+                    Id = 2, 
+                    Name = "Veggie", 
+                    IsGlutenFree = true,
+                    Ingredients = new List<Ingredients>(),
+                    Image = "https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                },
+                
+                new Pizza { 
+                    Id = 3, 
+                    Name = "Pepperoni Special Meatlovers", 
+                    IsGlutenFree = false,
+                    Ingredients = new List<Ingredients>(),
+                    Image = "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+                },
             };
         }
         #endregion
